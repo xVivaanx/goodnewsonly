@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Good News Only</title>
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <link href="favicon.png" rel="icon" type="image/x-icon">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <header class ="header" id ="myHeader">
+         <div class="headersection">
+             <div class="newsline">
+               <div>
+                 <a href="index.html"><img src="images/drop.png"></a>
+               </div>
+               <div>
+                  <ul class="headermenu">
+                     <li><a href="index.html#goodnews">Good News</a></li>
+                     <li><a href="index.html#blogarticles">Blogs</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <a href="index.html">Home</a>
+			   <a href="about.html">About</a>
+               <a href="submit.html">Submit a Story</a>
+			  
+            </div>
+            <div>
+               <span class="spanright" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; </span>
+            </div>
+         </div>
+      </header>
+<main class="content">
+ <div class="wrapper">
+	<div class="imagediv">
+ <img src="submitpic.jpg" > 
+</div>
+<div class="formdiv">
+	 	<h2>Submit your story</h2>
+
+
+ <form id="myform" onsubmit="return validate();" method="post"action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf-sjpnHeelpGZ1yiOn-2BihH4EhVbTNTYzkNFijAbFiwgJmQ/formResponse">
+	 		 <div class="inputfield">
+	 			<input type="text" placeholder="Name" id="name1" name="entry.431515088">			
+	 		</div>
+	 		<div class="inputfield">
+	 			<input type="text" placeholder="Phone" id="phone1" name="entry.1906149111">	
+	 		</div>
+	 		<div class="inputfield">
+	 			<input type="text" placeholder="Email" id="email1" name="entry.345750467">	
+	 		</div>
+	 		<div class="inputfield">
+				<textarea placeholder="Your Story" id="message1" name="entry.1997701730"></textarea> 
+	 		</div>
+	 		<div class="btn">
+	 			<input type="submit">
+	 		</div>
+	 	<div id="errormessage"></div>	
+	 	</form> 
+		</div></div>
+</main>
+ <footer>
+         <div class="row">
+            <div class="column">
+               <h3>Contact Us</h3>
+               <p>Step By Step School, A-10, Sector -132,<br> Taj Expressway,<br> Noida-201304</p>
+               <p>Call Us : <a href="tel:123456789">123456789</a></p>
+               <p>Mail Us : <a href="mailto:enquiry@gmail.com">enquiry@gmail.com</a></p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="column">
+               <h3>Sitemap</h3>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href= "about.html">About Us</a></li>
+                  <li><a href="submit.html">Submit Your Story</a></li>
+                  
+                  <li><a href="terms.html">Terms and Conditions</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <script>
+         function openNav() {
+           document.getElementById("mySidenav").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+         }
+         
+         window.onscroll = function() {myFunction()};
+         
+         var header = document.getElementById("myHeader");
+         
+         var sticky = header.offsetTop;
+         
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             header.classList.add("sticky");
+         	
+           } else {
+             header.classList.remove("sticky");
+           }
+         }
+      </script>
+   </body>

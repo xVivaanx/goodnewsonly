@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Good News Only</title>
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <link href="favicon.png" rel="icon" type="image/x-icon">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <header class ="header" id ="myHeader">
+         <div class="headersection">
+            <div class="newsline">
+               <div>
+                  <a href="index.html"><img src="images/drop.png"></a>
+               </div>
+               <div>
+                  <ul class="headermenu">
+                     <li><a href="#goodnews">Good News</a></li>
+                     <li><a href="#blogarticles">Blogs</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <a href="index.html">Home</a>
+			   <a href="about.html">About</a>
+               <a href="submit.html">Submit a Story</a>
+			   
+            </div>
+            <div>
+               <span class="spanright" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; </span>
+            </div>
+         </div>
+      </header>
+      <main class="content">
+         <section class="bannerimage">
+            <div class="aboutbanner">
+               <p id="newsbite"> 2022 in review : A year of resilience and hope, as told through the top good news stories.</p><br>
+               <a class="newsbtn" href="https://www.youtube.com/watch?v=lN5Cus4VTDo" target="_blank">
+               PLAY&nbsp;<span style='font-size:20px;'>&#9658;</span>
+               </a>
+            </div>
+            <div class="bannerslides"> 
+               <a href="submit.html">				  
+               <img src="images/fifa.png" class="bottom">
+               <img src="images/tokyo.png" class="top">
+               </a>
+            </div>
+         </section>
+         <div class="row" id="goodnews">
+            <h2>Good News</h2>
+            <div class="tabs">
+               <input type="radio" name="tab" id="tab1" role="tab" checked>
+               <label for="tab1" id="tab1-label">Sports News</label>
+               <section aria-labelledby="tab1-label">
+                  <div class="column">
+                     <a href="https://www.youtube.com/watch?v=W-2WiqOtlqg">
+                        <img src="images/cutlery.jpg">
+                        <div class="textbox">Edible Cutlery
+                     </a>
+                     </div>
+                  </div>
+                  <div class="column">
+                     <a href="https://www.youtube.com/watch?v=FOpTV0Or7z0">
+                        <img src="images/sports.jpg">
+                        <div class="textbox">Sports News
+                     </a>
+                     </div>
+                  </div>
+                  <div class="column">
+                     <a href="https://www.youtube.com/watch?v=1W0xf_6hBHY">
+                        <img src="images/assistive_tech.jpg">
+                        <div class="textbox">Assistive Technology
+                     </a>
+                     </div>
+                  </div>
+                
+               
+               
+               </section>
+            </div>
+         </div>
+         <h2>Blog Articles </h2>
+         <div class="row" id="blogarticles">
+            <div class="column">
+               <a href="chickenblog.html">
+                  <img src="images/chicken.jpg">
+                  <div class="textbox">AI & Farm Chickens  
+               </a>
+               </div>
+            </div>
+            <div class="column">
+               <a href="kindnessblog.html">
+                  <img src="images/kindness.jpeg">
+                  <div class="textbox">Acts of Kindness 
+               </a>
+               </div>
+            </div>
+            <div class="column">
+               <a href="trainingblog.html">
+                  <img src="images/physiotherapy.jpg">
+                  <div class="textbox">Fitness Training  
+               </a>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <div class="row">
+            <div class="column">
+               <h3>Contact Us</h3>
+               <p>Step By Step School, A-10, Sector -132,<br> Taj Expressway,<br> Noida-201304</p>
+               <p>Call Us : <a href="tel:123456789">123456789</a></p>
+               <p>Mail Us : <a href="mailto:enquiry@gmail.com">enquiry@gmail.com</a></p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="column">
+               <h3>Sitemap</h3>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href= "about.html">About Us</a></li>
+                  <li><a href="submit.html">Submit Your Story</a></li>
+                  
+                  <li><a href="terms.html">Terms and Conditions</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <script>
+         $('ul.tabs li').click(function () {
+               var tab_id = $(this).attr('href');
+         
+               $('ul.tabs li').removeClass('current');
+               $('.tab-content').removeClass('current');
+         
+               $(this).addClass('current');
+               $("#" + tab_id).addClass('current');
+           })
+      </script>
+      <script>
+         function openNav() {
+           document.getElementById("mySidenav").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+         }
+         
+         window.onscroll = function() {myFunction()};
+         
+         var header = document.getElementById("myHeader");
+         
+         var sticky = header.offsetTop;
+         
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             header.classList.add("sticky");
+         	
+           } else {
+             header.classList.remove("sticky");
+           }
+         }
+      </script>
+   </body>

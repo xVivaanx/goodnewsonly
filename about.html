@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Good News Only</title>
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <link href="favicon.png" rel="icon" type="image/x-icon">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <header class ="header" id ="myHeader">
+         <div class="headersection">
+            <div class="newsline">
+               <div>
+                 <a href="index.html"><img src="images/drop.png"></a>
+               </div>
+               <div>
+                  <ul class="headermenu">
+                     <li><a href="index.html#goodnews">Good News</a></li>
+                     <li><a href="index.html#blogarticles">Blogs</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <a href="index.html">Home</a>
+			   <a href="about.html">About</a>
+               <a href="submit.html">Submit a Story</a>
+			  
+            </div>
+            <div>
+               <span class="spanright" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; </span>
+            </div>
+         </div>
+      </header>
+      <main class="content">
+         <article>
+            <h2>About Us</h2>
+            <hr>
+            Welcome to GoodNewsOnly, where we strive to bring only the most positive and uplifting stories to our readers. Our mission is to spread joy and positivity in a world that can often feel overwhelming and negative. We believe that good news has the power to bring people together and make a difference in the world.
+            We are a team of dedicated journalists who work tirelessly to find and report on stories that inspire, uplift and bring hope to our readers. We also love hearing from you, so if you have a story that touches the heart then we encourage that is shared with us. 
+            From heartwarming human interest stories to innovative solutions to global problems, we aim to show that there is still so much good in the world.
+            We are committed to providing our readers with a balanced and varied selection of stories from around the world, that will leave them feeling informed, inspired and above all, hopeful. 
+            Whether you're looking for a break from the daily news cycle or simply want to feel good about the world we live in, we've got you covered.
+            Thank you for choosing to spend your valuable time with us and we hope you enjoy reading our stories as much as we enjoy putting them together.
+         </article>
+      </main>
+     <footer>
+         <div class="row">
+            <div class="column">
+               <h3>Contact Us</h3>
+               <p>Step By Step School, A-10, Sector -132,<br> Taj Expressway,<br> Noida-201304</p>
+               <p>Call Us : <a href="tel:123456789">123456789</a></p>
+               <p>Mail Us : <a href="mailto:enquiry@gmail.com">enquiry@gmail.com</a></p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="column">
+               <h3>Sitemap</h3>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href= "about.html">About Us</a></li>
+                  <li><a href="submit.html">Submit Your Story</a></li>
+                  
+                  <li><a href="terms.html">Terms and Conditions</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <script>
+         function openNav() {
+           document.getElementById("mySidenav").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+         }
+         
+         window.onscroll = function() {myFunction()};
+         
+         var header = document.getElementById("myHeader");
+         
+         var sticky = header.offsetTop;
+         
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             header.classList.add("sticky");
+         	
+           } else {
+             header.classList.remove("sticky");
+           }
+         }
+      </script>
+   </body>

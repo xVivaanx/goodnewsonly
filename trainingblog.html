@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Good News Only</title>
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <link href="favicon.png" rel="icon" type="image/x-icon">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <header class ="header" id ="myHeader">
+         <div class="headersection">
+             <div class="newsline">
+               <div>
+                 <a href="index.html"><img src="images/drop.png"></a>
+               </div>
+               <div>
+                  <ul class="headermenu">
+                     <li><a href="index.html#goodnews">Good News</a></li>
+                     <li><a href="index.html#blogarticles">Blogs</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <a href="index.html">Home</a>
+			   <a href="about.html">About</a>
+               <a href="submit.html">Submit a Story</a>
+			   
+            </div>
+            <div>
+               <span class="spanright" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; </span>
+            </div>
+         </div>
+      </header>
+
+<main class="content">
+<article>
+<h2>Fitness Training</h2>
+<h3><i>2 min read</i></h3>
+<hr>
+Many successful people live by the expression “in every tragedy, there is an opportunity.” It turns out that the same kind of thinking can apply to the smallest of moments and to the youngest of people. 
+
+A new 30-minute online training session can reduce teenagers’ stress by teaching them to look at it differently. 
+
+Growth mindset 
+This 30-minute training session employs the “growth mindset” which has been very successful in sports and education psychology. Its newest development encourages people to reinterpret their body’s reaction to stress as a good thing. For instance, a heightened heart rate can boost energy and oxygen flow to the brain. This method tries to get users to see stress as an opportunity to enhance performance, rather than something to fix. 
+
+A study conducted at the University of Texas in Austin looked at 4,000 high school and undergraduate college students using this 30-minute, low-cost session. 
+
+“We’re trying to change teenagers’ beliefs about stressful situations and their responses to stressful situations,” said Dr. David Yeager, a psychologist at the University of Texas at Austin and the first author of the study. “We’re trying to get teenagers to realize that when you’re doing something hard and your body starts to feel stressed, that could be a good thing.”
+
+Throughout six randomized and controlled trials, Yeager and his colleagues demonstrated that this 30-minute intervention had effective and lasting effects on the students involved. In one experiment, the intervention showed lasting effects nine months later with students being 14 percent more likely to pass their classes by the end of the year. Later on, teenagers who had taken the training reported reduced general anxiety. 
+
+Stress is on the rise for teenagers. Teaching them to reinterpret their stress might help them cope and even work better. 
+</article>
+
+
+
+</main>
+ <footer>
+         <div class="row">
+            <div class="column">
+               <h3>Contact Us</h3>
+               <p>Step By Step School, A-10, Sector -132,<br> Taj Expressway,<br> Noida-201304</p>
+               <p>Call Us : <a href="tel:123456789">123456789</a></p>
+               <p>Mail Us : <a href="mailto:enquiry@gmail.com">enquiry@gmail.com</a></p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="column">
+               <h3>Sitemap</h3>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href= "about.html">About Us</a></li>
+                  <li><a href="submit.html">Submit Your Story</a></li>
+                  
+                  <li><a href="terms.html">Terms and Conditions</a></li>
+               </ul>
+            </div>
+         </div>
+      
+      </footer>
+      <script>
+         function openNav() {
+           document.getElementById("mySidenav").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+         }
+         
+         window.onscroll = function() {myFunction()};
+         
+         var header = document.getElementById("myHeader");
+         
+         var sticky = header.offsetTop;
+         
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             header.classList.add("sticky");
+         	
+           } else {
+             header.classList.remove("sticky");
+           }
+         }
+      </script>
+   </body>

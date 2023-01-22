@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Good News Only</title>
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <link href="favicon.png" rel="icon" type="image/x-icon">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <header class ="header" id ="myHeader">
+         <div class="headersection">
+             <div class="newsline">
+               <div>
+                 <a href="index.html"><img src="images/drop.png"></a>
+               </div>
+               <div>
+                  <ul class="headermenu">
+                     <li><a href="index.html#goodnews">Good News</a></li>
+                     <li><a href="index.html#blogarticles">Blogs</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <a href="index.html">Home</a>
+			   <a href="about.html">About</a>
+               <a href="submit.html">Submit a Story</a>
+			  
+            </div>
+            <div>
+               <span class="spanright" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; </span>
+            </div>
+         </div>
+      </header>
+
+<main class="content">
+<article>
+<h2>Revolutionizing the poultry industry: How AI is improving the lives of chickens</h2>
+<h3><i>2 min read</i></h3>
+<hr>
+We’ve already written before about AI’s potential to improve pigs’ lives by listening to them. Now, scientists have found they can use AI on another barnyard favorite: chickens. 
+
+Artificial intelligence can help the happiness and well-being of chickens by listening to them and determining their happiness by their squawks. 
+
+Researchers estimate that the technology could be available to farmers within five years. It differentiates and qualifies chicken distress calls, separating them from other farm noises with an accuracy of up to 97 percent. Being able to tell when chickens are in pain or distress could drastically improve the standards of livestock farming. 
+<br>
+“Chickens are very vocal, but the distress call tends to be louder than the others and is what we would describe as a pure tonal call,” said Alan McElligott, an associate professor of animal behavior and welfare at the City University of Hong Kong. “Even to the untrained ear, it’s not too difficult to pick them out.”
+
+While this technology might not be practical for huge commercial chicken flocks with thousands and thousands of chickens, it would greatly help smaller chicken farms. It uses deep learning to identify a variety of distressed noises from chickens that were taught to the program by field experts. With this and the right recording equipment, smaller operations could identify if their chickens are in distress and adjust their housing situations or tend to an individual chicken. 
+<br>
+“Our end goal is not to count distress calls, but to create conditions in which the chickens can live and have a reduced amount of distress,” said McElligott.
+
+</article>
+
+
+
+</main>
+ <footer>
+         <div class="row">
+            <div class="column">
+               <h3>Contact Us</h3>
+               <p>Step By Step School, A-10, Sector -132,<br> Taj Expressway,<br> Noida-201304</p>
+               <p>Call Us : <a href="tel:123456789">123456789</a></p>
+               <p>Mail Us : <a href="mailto:enquiry@gmail.com">enquiry@gmail.com</a></p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="column">
+               <h3>Sitemap</h3>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href= "about.html">About Us</a></li>
+                  <li><a href="submit.html">Submit Your Story</a></li>
+                  
+                  <li><a href="terms.html">Terms and Conditions</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <script>
+         function openNav() {
+           document.getElementById("mySidenav").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+         }
+         
+         window.onscroll = function() {myFunction()};
+         
+         var header = document.getElementById("myHeader");
+         
+         var sticky = header.offsetTop;
+         
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             header.classList.add("sticky");
+         	
+           } else {
+             header.classList.remove("sticky");
+           }
+         }
+      </script>
+   </body>
